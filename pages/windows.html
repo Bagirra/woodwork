@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derevo</title>
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" width=50px/>
+            </a>
+            <nav>
+                <a href="mi.html">О нас</a>
+                <a href="uslugi.html">Услуги</a>
+                <a href="contact.html">Контакты</a>
+            </nav>         
+        </div>
+    </header>
+
+    <div class="conteiner">
+        <aside>
+            <a href="dors.html">Двери</a>
+            <a href="windows.html">Окна</a> 
+            <a href="mobail.html">Мебель</a>
+            <a href="kitcen.html">Кухни</a>
+            <a href="sad.html">Садовая мебель</a>
+            <a href="raznoe.html">Разное</a> 
+            <hr/>
+            <div class="vicislit">
+                <h3>Вычислить стоимость окна в леях по размерам</h3>
+                <p>высота в см</p>
+                <input id="num1" width="10px"/>
+                <p>ширина в см</p>
+                <input id="num2" />
+                <button class="but" onclick="func()">Расчитать</button>
+            </div>
+            
+            <p id="result"></p>
+           
+            <script>
+               function func(){
+                     var num1 = Number(document.getElementById("num1").value);
+                     var num2 = Number(document.getElementById("num2").value);
+                     var res = num1 * num2 * 0.076;
+                     
+                     document.getElementById("result").innerHTML = res;
+                    }
+            </script>
+        </aside>
+        <main>
+            <div class="conteiner-index">
+                <h1 class="nume">Окна</h1>
+                <div class="galeria">
+                    <p>W1<img class="img-galeria2" src="../images/w1.jpg" alt="Двери"></p>
+                    <p>W2<img class="img-galeria2" src="../images/w2.jpg" alt="Двери"></p>
+                    <p>W3<img class="img-galeria2" src="../images/w3.jpg" alt="Двери"></p>
+                    <p>W4<img class="img-galeria2" src="../images/w4.jpg" alt="Двери"></p> 
+                    <p>W5<img class="img-galeria2" src="../images/w5.jpg" alt="Двери"></p>
+                    <p>W6<img class="img-galeria2" src="../images/w6.jpg" alt="Двери"></p> 
+                    
+                </div>
+            </div>
+    </div>
+    <footer>
+        <h2>Изделия из дерева 2023 &#169; </h2>
+    </footer>
+    
+</body>
+</html>

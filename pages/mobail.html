@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Derevo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" type="image/x-icon"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" width=50px/>
+            </a>
+            <nav>
+                <a href="../pages/mi.html">О нас</a>
+                <a href="../uslugi.html">Услуги</a>
+                <a href="../contact.html">Контакты</a>
+            </nav>         
+        </div>
+    </header>
+
+    <div class="conteiner">
+        <aside>
+            <a href="dors.html">Двери</a>
+            <a href="windows.html">Окна</a> 
+            <a href="mobail.html">Мебель</a>
+            <a href="kitcen.html">Кухни</a>
+            <a href="sad.html">Садовая мебель</a>
+            <a href="raznoe.html">Разное</a>
+            
+            <p>Вычислить стоимость кровати в леях по размерам</p>
+            <p>высота в см</p>
+            <input id="num1"/>
+            <p>ширина в см</p>
+            <input id="num2"/>
+            <button class="but" onclick="func()">Расчитать</button>
+            
+            <p id="result"></p>
+            
+            <script>
+               function func(){
+                     var num1 = Number(document.getElementById("num1").value);
+                     var num2 = Number(document.getElementById("num2").value);
+                     var res = num1 * num2 * 0.122;
+                     
+                     document.getElementById("result").innerHTML = res;
+                    }
+            </script>
+            <hr/>
+            <div class="vicislitm">
+                <p>Вычислить стоимость стола в леях по размерам</p>
+                <p>высота в см</p>
+                <input id="num11"/>
+                <p>ширина в см</p>
+                <input id="num22"/>
+                <button class="but" onclick="func1()">Расчитать</button>
+            
+                <p id="result1"></p>
+            </div>
+            <script>
+               function func1(){
+                     var num11 = Number(document.getElementById("num11").value);
+                     var num22 = Number(document.getElementById("num22").value);
+                     var res2 = num11 * num22 * 0.122;
+                     
+                     document.getElementById("result").innerHTML = res2;
+                    }
+            </script>
+        </aside>
+        <main>
+            <div class="conteiner-index">
+                <h1 class="nume">Кровати</h1>
+                <div class="galeria">
+                    <p>B1<img class="img-galeria4" src="../images/b1.jpg" alt="Двери"></p>
+                    <p>B2<img class="img-galeria4" src="../images/b2.jpg" alt="Двери"></p>
+                    <p>B3<img class="img-galeria4" src="../images/b3.jpg" alt="Двери"></p>
+                    <p>B4<img class="img-galeria4" src="../images/b4.jpg" alt="Двери"></p> 
+                    <p>B5<img class="img-galeria4" src="../images/b5.jpg" alt="Двери"></p>
+                    <p>B6<img class="img-galeria4" src="../images/b6.jpg" alt="Двери"></p> 
+                </div>    
+                <h1 class="nume">Столы</h1>
+                <div class="galeria">
+                    <p>S1<img class="img-galeria4" src="../images/s1.jpg"></p>
+                    <p>S2<img class="img-galeria4" src="../images/s2.jpg"></p>
+                    <p>S3<img class="img-galeria4" src="../images/s3.jpg"></p>
+                </div>
+                <h1 class="nume">Полки</h1>
+                <div class="galeria">
+                    <p>P1<img class="img-galeria4" src="../images/p1.jpg"></p>
+                    <p>P2<img class="img-galeria4" src="../images/p2.jpg"></p>
+                    <p>P3<img class="img-galeria4" src="../images/p3.jpg"></p>
+                    <p>P4<img class="img-galeria4" src="../images/p4.jpg"></p>
+                    <p>P5<img class="img-galeria4" src="../images/p5.jpg"></p>
+                    <p>P6<img class="img-galeria4" src="../images/p6.jpg"></p>
+                    <p>P7<img class="img-galeria4" src="../images/p7.jpg"></p>
+                    <p>P8<img class="img-galeria4" src="../images/p8.jpg"></p>
+                    <p>P9<img class="img-galeria4" src="../images/p10.jpg"></p>
+                </div>
+            </div> 
+        
+        </main>
+    </div>
+    <footer>
+        <h2>Изделия из дерева 2023 &#169; </h2>
+    </footer>
+    
+</body>
+</html>

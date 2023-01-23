@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Derevo</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" width=50px/>
+            </a>
+            <nav>
+                <a href="mi.html">О нас</a>
+                <a href="uslugi.html">Услуги</a>
+                <a href="contact.html">Контакты</a>
+            </nav>         
+        </div>
+    </header>
+
+    <div class="conteiner">
+        <aside>
+            <a href="dors.html">Двери</a>
+            <a href="windows.html">Окна</a> 
+            <a href="mobail.html">Мебель</a>
+            <a href="kitcen.html">Кухни</a>
+            <a href="sad.html">Садовая мебель</a>
+            <a href="raznoe.html">Разное</a>  
+            <p>Вычислить стоимость двери в леях по размерам</p>
+            <p>высота в см</p>
+            <input id="num1"/>
+            <p>ширина в см</p>
+            <input id="num2" />
+            <button class="but" onclick="func()">Расчитать</button>
+           
+            <p id="result"></p>
+           <div class="res">
+                <script>
+                function func(){
+                        var num1 = Number(document.getElementById("num1").value);
+                        var num2 = Number(document.getElementById("num2").value);
+                        var res = num1 * num2 * 0.122;
+                        
+                        document.getElementById("result").innerHTML = res;
+                        }
+                </script>
+            </div>
+        </aside>
+        <main>
+            <div class="conteiner-index">
+                <h1 class="nume">Двери</h1>
+                <div class="galeria">
+                    
+                    <p>D1<img class="img-galeria1" src="../images/d10.jpg" alt="Двери"></p>
+                    <p>D2<img class="img-galeria1" src="../images/dors.jpg" alt="Двери"></p>
+                    <p>D3<img class="img-galeria1" src="../images/d11.jpg" alt="Двери"></p>
+                    <p>D4<img class="img-galeria1" src="../images/d13.jpg" alt="Двери"></p> 
+                    <p>D5<img class="img-galeria1" src="../images/d17.jpg" alt="Двери"></p>
+                    <p>D6<img class="img-galeria1" src="../images/d4.jpg" alt="Двери"></p> 
+                    <p>D7<img class="img-galeria1" src="../images/d5.jpg" alt="Двери"></p>
+                    <p>D8<img class="img-galeria1" src="../images/d8.jpg" alt="Двери"></p>
+                    <p>D9<img class="img-galeria1" src="../images/d10.jpg" alt="Двери"></p>
+                    <p>D10<img class="img-galeria1" src="../images/d20.jpg" alt="Двери"></p>
+                </div>
+
+            </div>
+            
+        </main>
+    </div>
+    <footer>
+        <h2>Изделия из дерева 2023 &#169; </h2>
+    </footer>
+    
+</body>
+</html>

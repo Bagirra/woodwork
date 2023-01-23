@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Derevo</title>
+    <link rel="icon" type="image/png" href="images/icon.png"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+
+</head>
+<body>
+    <header>
+        <div>
+            <a href="../index.html">
+                <img src="../images/logo.png" alt="logo" width=50px/>
+            </a>
+            <nav>
+                <a class="goriz" href ="mi.html">О нас</a>
+                <a href="uslugi.html">Услуги</a>
+                <a href="contact.html">Контакты</a>
+            </nav>         
+        </div>
+    </header>
+
+    <div class="conteiner">
+        <aside>
+            <a href="dors.html">Двери</a>
+            <a href="windows.html">Окна</a> 
+            <a href="mobail.html">Мебель</a>
+            <a href="kitcen.html">Кухни</a>
+            <a href="sad.html">Садовая мебель</a>
+            <a href="raznoe.html">Разное</a>
+            <p>Вычислить стоимость ящичка по размерам по размерам</p>
+            <p>высота в см</p>
+            <input id="num1"/>
+            <p>ширина в см</p>
+            <input id="num2" />
+            <p>длина в см</p>
+            <input id="num3" />
+            <button class="but" onclick="func()">Расчитать</button>
+           
+            <p id="result"></p>
+           <div class="res">
+                <script>
+                function func(){
+                        var num1 = Number(document.getElementById("num1").value);
+                        var num2 = Number(document.getElementById("num2").value);
+                        var num3 = Number(document.getElementById("num2").value);
+                        var res = num1 * num2 * num3 *  0.01;
+                        
+                        document.getElementById("result").innerHTML = res;
+                        }
+                </script>
+            </div>
+        </aside>
+        <main>
+            <div class="conteiner-index">
+                <h1 class="nume">Декоративные ящики</h1>
+                <div class="galeria">
+                    <p>L1<img class="img-galeria3" src="../images/ia1.jpg" alt="Ящик"></p>
+                    <p>L2<img class="img-galeria3" src="../images/ia2.jpg" alt="Ящик"></p>
+                    <p>L3<img class="img-galeria3" src="../images/ia3.jpg" alt="Ящик"></p>
+                    <p>L4<img class="img-galeria3" src="../images/ia4.jpg" alt="Ящик"></p> 
+                    <p>L5<img class="img-galeria3" src="../images/ia5.jpg" alt="Ящик"></p>
+                    <p>L6<img class="img-galeria3" src="../images/ia6.jpg" alt="Ящик"></p> 
+                    <p>L7<img class="img-galeria3" src="../images/ia7.jpg" alt="Ящик"></p>
+                    <p>L8<img class="img-galeria3" src="../images/ia8.jpg" alt="Ящик"></p>
+                    
+                </div>
+                <h1 class="nume">Шкатулки</h1>
+                <div class="galeria">
+                    <p>SH1<img class="img-galeria3" src="../images/sh.jpg" alt="Ящик"></p>
+                    <p>SH2<img class="img-galeria3" src="../images/sh1.jpg" alt="Ящик"></p>
+                    <p>SH3<img class="img-galeria3" src="../images/sh2.jpg" alt="Ящик"></p>
+                    <p>SH4<img class="img-galeria3" src="../images/sh3.jpg" alt="Ящик"></p> 
+                    <p>SH5<img class="img-galeria3" src="../images/sh4.jpg" alt="Ящик"></p>
+                    <p>SH6<img class="img-galeria3" src="../images/sh5.jpg" alt="Ящик"></p> 
+                    <p>SH7<img class="img-galeria3" src="../images/sh6.jpg" alt="Ящик"></p>
+                    <p>SH8<img class="img-galeria3" src="../images/sh7.jpg" alt="Ящик"></p>
+                    
+                </div>
+                <h1 class="nume">Рамки</h1>
+                <div class="galeria">
+                    <p>R1<img class="img-galeria3" src="../images/r1.jpg" alt="рамка"></p>
+                    <p>R2<img class="img-galeria3" src="../images/r2.jpg" alt="рамка"></p>
+                    <p>R3<img class="img-galeria3" src="../images/r3.jpg" alt="рамка"></p>
+                    <p>R4<img class="img-galeria3" src="../images/r4.jpg" alt="рамка"></p> 
+                    <p>R5<img class="img-galeria3" src="../images/r5.jpg" alt="рамка"></p>
+                    <p>R6<img class="img-galeria3" src="../images/r6.jpg" alt="рамка"></p> 
+                    <p>R7<img class="img-galeria3" src="../images/r7.jpg" alt="рамка"></p>
+                    <p>R8<img class="img-galeria3" src="../images/r8.jpg" alt="рамка"></p>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script type="text/javascript">
+        let button = document.getElementById("buttonId")
+
+        button.onclick = function sumInputs() {
+            let a = Number(document.getElementById("a").value);
+            let b = Number(document.getElementById("b").value);
+
+            document.getElementById("demo").innerHTML = a + b;
+        }
+    </script>
+
+    <footer>
+        <h2>Изделия из дерева 2023 &#169; </h2>
+    </footer>
+    
+</body>
+</html>
