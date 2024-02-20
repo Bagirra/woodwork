@@ -2,13 +2,13 @@ body {
     margin: 15px;
     font-size: 20px ;
     color: rgb(247, 213, 172);
-    background-image: url("images/fon3.jpg") ;
+    background-image: url("../images/fon3.jpg") ;
    
 }   
 header {
     min-height: 60px;
     display: flex;
-    background-image: url("images/fon5.jpg") ;
+    background-image: url("../images/fon5.jpg") ;
 }
 aside {
     width: 10%;
