@@ -2,13 +2,13 @@ body {
     margin: 15px;
     font-size: 20px ;
     color: rgb(247, 213, 172);
-    background-image: url("images/fon3.jpg") ;
+    background-image: url("../images/fon3.jpg") ;
    
 }   
 header {
     min-height: 60px;
     display: flex;
-    background-image: url("images/fon5.jpg") ;
+    background-image: url("../images/fon5.jpg") ;
 }
 aside {
     width: 10%;
@@ -38,7 +38,7 @@ aside a {
     overflow: auto;
 }
 .conteiner-index p{
-    font-weight: 1000;
+    font-weight: bold;
     text-shadow: 1px 1px 0px rgb(201, 197, 197), -1px -1px 0px rgb(21, 19, 19);
     
 }
@@ -98,8 +98,18 @@ aside a {
     margin: 10px;
 }
 .img-galeria6{
+    width: 31vw;
+    height: 400;
+    margin: 10px;
+}
+.img-galeria16{
     width: 15vw;
-    height: 200px;
+    height: 200;
+    margin: 10px;
+}
+.img-galeria161{
+    width: 12vw;
+    height: 170;
     margin: 10px;
 }
 nav{ 
@@ -158,6 +168,7 @@ footer {
     border-radius: 10px;
     padding: 10px 5px;
     box-shadow: 1px 1px 5px;
+
 }
 .container-uslugi{
     min-height: 250px;
@@ -166,16 +177,16 @@ footer {
     border-radius: 10px;
     padding: 10px 20px;
     box-shadow: 1px 1px 5px;
+    color: rgb(225, 218, 218);
 }
 main {
-    background: linear-gradient(rgba(195, 91, 91, 0.715));
     background-size: cover;
     width:90% ;
     float: left;
     min-height: 85vh;
-    color: rgb(243, 234, 234);
+    color: rgb(225, 219, 219);
     font-weight: 500;
-    text-shadow: 1px 1px 0px rgb(201, 197, 197), -1px -1px 0px rgb(21, 19, 19);
+    text-shadow: 1px 1px 0px rgb(230, 216, 216), -1px -1px 0px rgb(21, 19, 19);
 }
 .forma-contact{
     padding: 0 10px;
@@ -188,7 +199,7 @@ main {
     border-radius: 2px;
     font-size: 18px;
     border: 1px solid;
-    color: rgb(217, 208, 208);
+    color: rgb(53, 49, 49);
 }
 .forma-contact input:focus, .forma-contact textarea:focus {
     border: 1px rgb(233, 230, 235);
@@ -205,17 +216,18 @@ main {
     font-size: 20px;
 }
 .center{
-    text-align: left;
+    text-align: center;
+   
 }
 .contact{
     text-align: left;
 }
 h1{
-    text-shadow: 1px 1px 0px rgb(201, 197, 197), -2px -2px 0px rgb(21, 19, 19);
+    text-shadow: 1px 1px 0px rgb(151, 143, 143), -2px -2px 0px rgb(21, 19, 19);
     text-align: center;
 }
 .cont h1{
-    text-shadow: 1px 1px 0px rgb(201, 197, 197), -2px -2px 0px rgb(21, 19, 19);
+    text-shadow: 1px 1px 0px rgb(141, 138, 138)2px -2px 0px rgb(21, 19, 19);
     text-align: center;
 }
 .goriz{
@@ -227,14 +239,39 @@ h1{
 .vicislitm{
     margin-top: 170px;
 }
+.slideshow-conteiner{
+    position: relative;
+    margin: 100 ;
+    border: 3px solid rgb(217, 208, 208);
+    box-shadow: 10px 10px 15px rgb(219, 184, 184);
+    padding: 100;
+    overflow: 10px 10px;
+}
+.slide{
+    display: none;
+    height: 100%;
+}
+.slide img{
+    height:300%;
+    width:30%;
+    margin-left: 350px;
+    padding: 5%;
+}
+.text{
+    text-align: center;
+    font-size: 50;
+    position: relative;
+    bottom: 80px;
+    padding: 8px 12px;
+}
 
 @keyframes povorot{
     0% {transform:rotate(-10deg) ;}
-    100% {transform:rotate(-6deg) ;}
+    100% {transform:rotate(6deg) ;}
 }
 @media(max-width:1300px){
     aside{
-        width:15px;
+        width:15%;
     }
     main{
         width:85%;   

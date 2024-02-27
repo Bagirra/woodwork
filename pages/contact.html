@@ -8,10 +8,6 @@
     <link rel="icon" type="image/png" href="images/icon.png"/>
     <link rel="stylesheet" type="text/css" href="../css/style.css"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fontawesome/4.7.0/css/font-awesome.min.css" />
-    <integrity  type="text/javascript"></integrity>
-    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
-    </script>
-
 </head>
 <body>
     <header>
@@ -38,23 +34,24 @@
             <a href="raznoe.html">Разное</a>  
         </aside>
         <main>
-            <h1 >Контакты</h1>
+            <h1 class="nume">Контакты</h1>
             <div class="container-contacte">
                 <div class="row">
                     <div class="col-5 forma-contact">
                         <h3>Контактные данные &#9742;</h3>
                         <b>телефон, viber</b>
                         <a href="tel:+37379100287">079100287</a><br/>  
-                       
+        
                         <div class="col-5 telefon-contact">
-                            <h3 class="center">Отправить Сообщение &#9993;</i></h3>
-                            <form autocomplete="off" id="formular" method="POST" action="https://docs.google.com/spreadsheets/d/1hVPS91hfdFJUv8S7sQJEbsfH-xDONCwYx21kxslbcfI/edit#gid=0">
-                                <input type="text" name="nume" id="nume" placeholder="Фамилия" required/> <br/>
-                                <input type="text" name="prenume" id="prenume" placeholder="Имя" required/> <br/>
-                                <input type="email" name="email" id="email" placeholder="email" required/> <br/>
-                                <input type="tel" name="tema" id="tema" placeholder="Номер телефона" required/> <br/>
-                                <textarea name="mesaj" id="mesaj" placeholder="Сообщение" rows="11"></textarea> <br/>
-                                <input class="transmit" type="button" value="Отправить" onclick="send()"/>
+                            <h3><u>Заполните форму предварительного заказа</u> &#9993;</i></h3>
+                            <form autocomplete="off" id="formular" method="POST" action="https://sheetdb.io/api/v1/q2odr028zaatj">
+                                <input type="text" name="data[nume]" id="nume" placeholder="Фамилия*" required/> <br/>
+                                <input type="text" name="data[prenume]" id="prenume" placeholder="Имя*" required/> <br/>
+                                <input type="email" name="data[email]" id="email" placeholder="email*" required/> <br/>
+                                <input type="tel" name="data[tel]" id="tel" placeholder="Номер телефона*" required/> <br/>
+                                <input type="text" name="data[cod]" id="cod" placeholder="Код изделия*" required/> <br/>
+                                <textarea name="data[mesaj]" id="mesaj" placeholder="Параметры в см  ширина, длина, высота" rows="8"></textarea> <br/>
+                                <input class="transmit" type="submit" value="Отправить" />
                             </form>
                         </div>    
                     </div>
@@ -75,9 +72,8 @@
     </div> 
 
     <footer>
-        <h2>Pizza Pronto 2021 &#169; </h2>
-    </footer>
-    <script src="../js/send.js"></script>
+        <h2>Изделия из дерева 2023 &#169; </h2>
+    </footer>  
     
 </body>
 </html>
